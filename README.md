@@ -43,7 +43,7 @@ The following components are required to run the server:
    - Set up the database connection with the following parameters:
      - Address: `root@127.0.0.1`
      - Password: `""` (empty password).  
-     If you want to use a password for your database, you will need to update the connection parameters in all `.xml` configuration files.  
+     If you want to use a password for your database, you will need to update the connection parameters in all `.xml` configuration files in /exe/conf/.  
      ![MySQL Configuration](Screenshots/MySQLConfig.png)
 
 3. **Initialize the Database**  
