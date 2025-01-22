@@ -36,6 +36,7 @@ The following components are required to run the server:
 
 1. **Extract Heavy Files**  
    First, extract all heavy files using the `LFSUtility.bat` utility. Run this file from the project's root directory.
+   ![LFSUtility.bat](Screenshots/LFSUtility.png)
 
 2. **Configure MySQL**  
    - Install and run the **MySQL 8.0** server.
@@ -43,11 +44,12 @@ The following components are required to run the server:
      - Address: `root@127.0.0.1`
      - Password: `""` (empty password).  
      If you want to use a password for your database, you will need to update the connection parameters in all `.xml` configuration files.  
-     ![MySQL Configuration](Screenshots/MySQL_Config.png)
+     ![MySQL Configuration](Screenshots/MySQLConfig.png)
 
 3. **Initialize the Database**  
    - Run the `INITIALIZE_DATABASE.bat` file. This script will automatically create all necessary databases, game servers, and a default user.
    - To explore or add additional servers or users, refer to the `DataBaseInits/5. InitServerData.sql` file.
+   ![INITIALIZE_DATABASE.bat](Screenshots/InitDataBase.png)
 
 ---
 
@@ -57,6 +59,7 @@ The following components are required to run the server:
    After setting up the database, run the `START_SERVER.bat` file.  
    - Eight `cmd` windows should appear, each handling a specific part of the server logic.  
    - If fewer windows appear, check your MySQL configuration.
+   ![START_SERVER.bat](Screenshots/StartServer.png)
 
 2. **Verify Server Operation**  
    If everything starts correctly, the server is ready to use.
@@ -71,9 +74,11 @@ The following components are required to run the server:
      - Username: `Test`  
      - Password: `12345`  
    - You can create additional accounts later.
+   ![LoginScreen](Screenshots/LoginScreen.png)   
 
 2. **Check Connection**  
    Ensure that the client successfully connects to the server and transitions to the login screen.
+   ![LoginScreen](Screenshots/LoginScreen1.png)
 
 ---
 
