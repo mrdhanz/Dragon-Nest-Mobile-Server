@@ -1,5 +1,7 @@
 # Dragon-Nest-Mobile-Server
 
+[Русская версия](README_RU.md)
+
 This is the server-side component for the **Dragon Nest Mobile** game. The code has been partially refactored, and all necessary `.exe` files have been compiled, allowing the server to be run without additional setup. Below are the instructions for configuring and running the server.
 
 ---
