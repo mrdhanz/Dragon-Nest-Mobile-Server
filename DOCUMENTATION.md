@@ -20,6 +20,7 @@ This document consolidates the server architecture, configuration, runtime flows
 - [Database Initialization and Data Seeding](#database-initialization-and-data-seeding)
 - [Build and Dependencies](#build-and-dependencies)
 - [Operational Reference Notes](#operational-reference-notes)
+- [Deep-Dive References](#deep-dive-references)
 
 ---
 
@@ -232,3 +233,9 @@ Operational documentation in `doc/` contains environment-specific guidance, incl
 - Maintenance workflows for clearing data and orderly shutdown sequences.
 
 ---
+
+## Deep-Dive References
+For deeper source-level documentation, see:
+- [Core Framework Deep Dive](CORE_FRAMEWORK.md) — shared config, networking, protocol/RPC, and singleton/timer patterns.
+- [Server Lifecycle and Manager Initialization Map](SERVER_LIFECYCLE_AND_MANAGERS.md) — startup/update flow per server and key managers.
+- [GameServer Gameplay Architecture Deep Dive](GAMESERVER_GAMEPLAY_ARCHITECTURE.md) — entity/component model and network sync packaging.
