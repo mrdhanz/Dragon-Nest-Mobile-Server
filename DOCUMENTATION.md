@@ -21,6 +21,10 @@ This document consolidates the server architecture, configuration, runtime flows
 - [Build and Dependencies](#build-and-dependencies)
 - [Operational Reference Notes](#operational-reference-notes)
 - [Deep-Dive References](#deep-dive-references)
+- [Security: DDoS Mitigation](#security-ddos-mitigation)
+- [Security: DDoS Mitigation (iptables)](#security-ddos-mitigation-iptables)
+- [Security: Official ASN Sources](#security-official-asn-sources)
+- [Security: Packet Payload Filtering](#security-packet-payload-filtering)
 
 ---
 
@@ -239,3 +243,23 @@ For deeper source-level documentation, see:
 - [Core Framework Deep Dive](CORE_FRAMEWORK.md) — shared config, networking, protocol/RPC, and singleton/timer patterns.
 - [Server Lifecycle and Manager Initialization Map](SERVER_LIFECYCLE_AND_MANAGERS.md) — startup/update flow per server and key managers.
 - [GameServer Gameplay Architecture Deep Dive](GAMESERVER_GAMEPLAY_ARCHITECTURE.md) — entity/component model and network sync packaging.
+
+---
+
+## Security: DDoS Mitigation
+See [DDoS Mitigation Guide](DDOS_MITIGATION.md) for layered network and application-level defenses tailored to Gate/Login/Version ingress services.
+
+---
+
+## Security: DDoS Mitigation (iptables)
+See [iptables DDoS Protection](DDOS_IPTABLES.md) for a concrete, host-based firewall configuration aligned with the default Gate/Login/Version ports.
+
+---
+
+## Security: Official ASN Sources
+See [Official ASN Lists (Global Sources)](OFFICIAL_ASN_SOURCES.md) for authoritative RIR datasets and a repeatable method to build a global ASN list.
+
+---
+
+## Security: Packet Payload Filtering
+See [Packet Payload Filtering](PACKET_PAYLOAD_FILTERING.md) for iptables/nftables examples to drop known-bad payload signatures on ingress ports.
